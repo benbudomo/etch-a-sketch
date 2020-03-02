@@ -7,6 +7,16 @@
 
 }
 
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto';
+    color: black;
+}
+
 :root {
     --gridRows: 1;
     --gridColumns: 1;
