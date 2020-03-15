@@ -11,5 +11,8 @@ function createGrid(rows, columns) {
     }
 }
 
-createGrid(16, 16);
+function myFunction() {
+    let userNumber = prompt('Size of grid?', '2 – 64');
+    createGrid(userNumber, userNumber);
+}
 
