@@ -11,8 +11,16 @@ function createGrid(rows, columns) {
     }
 }
 
+function clearGrid() {
+    let currentDivs = document.querySelectorAll('.actualSquare');
+    currentDivs.forEach(div => {
+        squareGrid.removeChild(div);
+    });
+}
+
 function myFunction() {
     let userNumber = prompt('Size of grid?', '64');
+    clearGrid();
     createGrid(userNumber, userNumber);
 }
 
