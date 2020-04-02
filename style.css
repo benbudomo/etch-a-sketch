@@ -1,10 +1,14 @@
-#wrapper {
-    margin-right: auto;
-    margin-left:  auto;
-    max-width: 960px;
-    padding-right: 10px;
-    padding-left:  10px;
-
+#flexGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 h1 {
@@ -24,18 +28,19 @@ body {
 
 #squareGrid {
     display: grid;
-    justify-content: center;
-    grid-gap: 1px;
-    grid-template-rows: repeat(var(--gridRows), 50px);
-    grid-template-columns: repeat(var(--gridColumns), 50px);
+    grid-template-rows: repeat(var(--gridRows), 1fr);
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    border: 1px;
+    border-style: solid;
+    height: 600px;
+    width: 600px;
+
 }
 
 .actualSquare {
-    padding: 1px;
     border: 1px solid black;
-    text-align: center;
 }
 
 .backgroundColor {
-    background-color: blue;
+    background-color: lightblue;
 }
