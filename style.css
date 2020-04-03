@@ -16,9 +16,47 @@ h1 {
 }
 
 body {
-    background-color: white;
+    background-color: #FFF;
     font-family: 'Roboto';
-    color: black;
+    color: #00203FFF;
+}
+
+#gridButtons {
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#newGridButton {
+    background-color: #00203FFF;
+    color: #ADEFD1FF;
+    border: 2px solid #00203FFF;
+    margin-right: 20px;
+}
+
+#newGridButton:hover {
+    background-color: #ADEFD1FF;
+    color: #00203FFF;
+    border: 2px solid #ADEFD1FF;
+}
+
+#funButton {
+    background-color: #00203FFF;
+    color: #ADEFD1FF;
+    border: 2px solid #00203FFF;
+    margin-left: 20px;
+}
+
+#funButton:hover {
+    background-color: #ADEFD1FF;
+    color: #00203FFF;
+    border: 2px solid #ADEFD1FF;
 }
 
 :root {
@@ -32,15 +70,15 @@ body {
     grid-template-columns: repeat(var(--gridColumns), 1fr);
     border: 1px;
     border-style: solid;
-    height: 600px;
-    width: 600px;
-    margin-top: 50px;
+    height: 700px;
+    width: 700px;
+    margin-top: 30px;
 }
 
 .actualSquare {
-    border: 1px solid black;
+    border: 1px solid #00203FFF;
 }
 
 .backgroundColor {
-    background-color: lightblue;
+    background-color: #ADEFD1FF;
 }
